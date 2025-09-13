@@ -1,0 +1,25 @@
+const inputBox = document.getElementById("input-box");
+const listContainer = document.getElementById("list-container");
+
+function Addtask() {
+  if (inputBox.value === '') {
+    alert("You must write something");
+  } else {
+    let li = document.createElement("li");
+    li.textContent = inputBox.value;
+    listContainer.appendChild(li);
+
+    let span = document.createElement("span");
+    span.textContent = "\u00d7";
+    li.appendChild(span);
+
+    span.onclick = function () {
+      li.remove();
+    };
+
+    li.onclick = function () {
+      li.classList.toggle("checked");
+    };
+  }
+  inputBox.value = '';
+}
