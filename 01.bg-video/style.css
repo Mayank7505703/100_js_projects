@@ -1,0 +1,48 @@
+/* Full screen hero section */
+.hero {
+  height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Weather Card */
+.card {
+  width: 30rem;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #00feba, #5b548a);
+  color: #fff;
+  padding: 20px;
+}
+.temp{
+  font-size: 18px;
+}
+/* Search Bar */
+.input-el {
+  border-radius: 23px;
+  width: 60%;
+  height: 45px;
+  padding: 0 12px;
+  background: #ebfffc;
+  border: none;
+  outline: none;
+}
+
+.button-el button {
+  border-radius: 23px;
+  height: 45px;
+}
+
+/* Weather Icon */
+.weather-icon {
+  width: 80px;
+  height: 80px;
+  fill: #fff;
+}
+
+/* Center everything nicely */
+.searching {
+  justify-content: center;
+}
+
+.card-body{
+  display: none;
+}
